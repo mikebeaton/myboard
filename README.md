@@ -4,7 +4,7 @@ If you have the OpenCore source code on your machine - or at least [this directo
 
  - `myboard` will look up your (actual or OC configured) board id in SMBIOS, and will show that plus the corresponding machine name (e.g. iMac5,1) which it looks up in the OC .yaml files
 
- - `whichboard` will look take a single machine name (e.g. iMac5,1) as an argument, and show youthe corresponding board id looked up in the OC .yaml files
+ - `whichboard` will take a single machine name (e.g. iMac5,1) as an argument, and show you the corresponding board id looked up in the OC .yaml files
 
  ```
 $ ./myboard.sh 
