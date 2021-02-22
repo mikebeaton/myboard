@@ -4,6 +4,8 @@ Assuming this project is cloned as a peer of (i.e. at same dir level as) Acidant
 from board ID (e.g. Mac-42FD25EABCABB274) to board name (e.g. iMac15,1) and vice versa. When run with no args it
 will look up your own currently installed board ID and show the matching board name.
 
+**UPDATE:** Now with installer (clones own local copy of required OC files, and symlinks this tool as a command called `myboard` available from anywhere) and matching uninstaller.
+
 *Example usage:*
 
  ```
