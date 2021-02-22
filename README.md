@@ -1,34 +1,43 @@
 # MyBoardOpenCore
 
-Assuming this project is cloned as a peer of (i.e. at same dir level as) Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), then it will search in OpenCore's `.yaml` config files in order to convert
-from board ID (e.g. Mac-42FD25EABCABB274) to board name (e.g. iMac15,1) and vice versa. When run with no args it
-will look up your own currently installed board ID and show the matching board name.
+You can just clone this project and immediately run `./myboard.sh` - assuming this project has been cloned into the same parent directory as an existing copy of Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), then it will find the required OpenCore files and just work.
 
-**UPDATE:** Now with installer (clones own local copy of required OC files, and symlinks this tool as a command called `myboard` available from anywhere) and matching uninstaller.
+However it now comes with an installer (recommended) which clones a copy of the required OpenCore Mac model database files (inside a `.gitgnore`d subdirectory of your copy of this repo), and which also symlinks this tool as a command called `myboard` available from anywhere. Matching uninstaller (deletes the `myboard` symlink and removes the downloaded OC files) also provided.
 
-*Example usage:*
+**Usage**
 
- ```
+```
+  myboard
+    Detect installed board id, lookup corresponding product name
+
+  myboard -n
+    Detect installed product name, lookup corresponding board id
+
+  myboard {id-text}
+    Case insensitive lookup all or part of any board id or product name
+```
+
+**Examples**
+
+On a MacBookPro10,2 hybridized (changed board-id only) to a MacBookPro11,1:
+
+```
 $ myboard
-Board ID: "Mac-189A3D4F975D5FFC"
+detected board-id: "Mac-189A3D4F975D5FFC"
 SystemProductName: "MacBookPro11,1"
-
-$ myboard MacBookPro10,2
+$ myboard -n
+detected product-name: "MacBookPro10,2"
 BoardProduct: "Mac-AFD8A9D944EA4843"
-SystemProductName: "MacBookPro10,2"
+```
 
+Also quick, case-insensitive lookups of anything 🥳:
+
+```
 $ myboard iMac15,1
 BoardProduct: "Mac-42FD25EABCABB274"
 SystemProductName: "iMac15,1"
-
-$ myboard MacPro5,1
-BoardProduct: "Mac-F221BEC8"
-SystemProductName: "MacPro5,1"
-
-$ myboard Mac-F221BEC8
-./MacPro/MP41.yaml:BoardProduct: "Mac-F221BEC8"
-./MacPro/MP51.yaml:BoardProduct: "Mac-F221BEC8"
-./MacPro/MP41.yaml:SystemProductName: "MacPro4,1"
-./MacPro/MP51.yaml:SystemProductName: "MacPro5,1"
- ```
+$ myboard 42fd25
+BoardProduct: "Mac-42FD25EABCABB274"
+SystemProductName: "iMac15,1"
+```
 
