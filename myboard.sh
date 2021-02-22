@@ -13,7 +13,7 @@
 DETECT_BOARD_ID=1
 
 version () {
-  echo "myboard v0.2.0 - Copyright (c) 2021, Mike Beaton."
+  echo "myboard v0.2.1 - Copyright (c) 2021, Mike Beaton."
 }
 while true; do
   if [ "$1" == "-v" ] || [ "$1" == "--version" ]; then
@@ -72,9 +72,7 @@ if [ "$1" == "" ]; then
         echo "detected product-name:" \"$MY_BOARD\"
     fi
     echo
-fi
-
-if [ "$1" != "" ]; then
+else
     # search for user arg
     MY_BOARD=$1
 fi
