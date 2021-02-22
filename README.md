@@ -2,7 +2,7 @@
 
 You can just clone this project and immediately run `./myboard.sh` - assuming this project has been cloned into the same parent directory as an existing copy of Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), then it will find the required OpenCore files and just work.
 
-However it now comes with an installer (recommended) which clones a copy of the required OpenCore Mac model database files (inside a `.gitgnore`d subdirectory of your copy of this repo), and which also symlinks this tool as a command called `myboard` available from anywhere. Matching uninstaller (deletes the `myboard` symlink and removes the downloaded OC files) also provided.
+However it now comes with an installer (recommended) which clones a copy of the required OpenCore Mac model database files (inside a `.gitgnore`d subdirectory of your copy of this repo), and also symlinks this tool as a command called `myboard` available from anywhere. Matching uninstaller (deletes the `myboard` symlink and removes the downloaded OC files) also provided.
 
 **Usage**
 
