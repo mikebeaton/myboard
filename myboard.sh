@@ -54,7 +54,7 @@ elif [ -d "../OpenCorePkg" ]; then
 else
     echo "Cannot find OpenCorePkg directory. You may either clone the MyBoardOpenCore"
     echo "repo as a peer of (i.e. at same director level as) Acidanthera's OpenCorePkg,"
-    echo "or run install.sh to clone own local copy."
+    echo "or run install.sh to clone own local copy of just the required .yaml files."
     exit -1
 fi
 
