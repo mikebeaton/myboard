@@ -19,7 +19,9 @@ if [ -d "./OpenCorePkg" ]; then
 elif [ -d "../OpenCorePkg" ]; then
     cd ../OpenCorePkg/AppleModels/DataBase
 else
-    echo "Cannot find OpenCorePkg directory."
+    echo "Cannot find OpenCorePkg directory. You may either clone the MyBoardOpenCore"
+    echo "repo as a peer of (i.e. at same director level as) Acidanthera's OpenCorePkg,"
+    echo "or run install.sh to clone own local copy."
     exit -1
 fi
 
