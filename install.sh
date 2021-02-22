@@ -36,6 +36,6 @@ if [ -L "/usr/local/bin/myboard" ]; then
 fi
 
 echo "Linking myboard.sh at /usr/local/bin/myboard..."
-ln -s ./myboard.sh /usr/local/bin/myboard
+ln -s $SELF_PATH/myboard.sh /usr/local/bin/myboard
 
 echo "Done."
