@@ -6,7 +6,7 @@ This clones a copy of the required OpenCore Mac model database files into a `.gi
 
 A matching uninstaller `./uninstall.sh` will remove the downloaded OC files and delete the `myboard` symlink.
 
-You can also run `./myboard.sh` immediately from inside this repo with running `.install.sh` first, though this requires that this project has been cloned into the same parent directory as an existing copy of Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), so that it can find the OpenCore files that way instead.
+You can also run `./myboard.sh` immediately from inside this repo without running `.install.sh` first, though this requires that this project has been cloned into the same parent directory as an existing copy of Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), so that it can find the OpenCore files that way instead.
 
 **Usage**
 
