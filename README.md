@@ -23,7 +23,7 @@ A matching uninstaller `./uninstall.sh` will remove the downloaded OC files and 
 
 **Examples**
 
-On a MacBookPro10,2 hybridized (changed board-id only) to a MacBookPro11,1:
+On a MacBookPro10,2 hybridized (changed board-id only) using OpenCore to a MacBookPro11,1:
 
 ```
 $ myboard
