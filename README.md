@@ -1,4 +1,4 @@
-# MyBoardOpenCore
+# MyBoard
 
 You can just clone this project and immediately run `./myboard.sh` - assuming this project has been cloned into the same parent directory as an existing copy of Acidanthera's [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), then it will find the required OpenCore files and just work.
 
