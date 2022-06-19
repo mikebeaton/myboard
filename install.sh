@@ -17,7 +17,7 @@ cd $SELF_PATH
 
 # clone local copy of OpenCore's AppleModels directory
 if [ ! -d "./OpenCorePkg" ]; then
-    echo "Clonging OC AppleModels dir..."
+    echo "Cloning OC AppleModels dir..."
     
     git clone \
     --depth 1  \
